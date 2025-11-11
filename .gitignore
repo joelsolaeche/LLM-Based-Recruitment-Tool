@@ -1,0 +1,81 @@
+# Python
+*.py[cod]
+*$py.class
+*.so
+__pycache__/
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+#Educational files
+specialization_plan.md
+
+# Virtual Environments
+llm_recruit_req/
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Vector Database
+chroma/
+*.db
+*.sqlite3
+
+# Chainlit
+# Keep config but exclude user uploads and session data
+.files/
+.chainlit/*.db
+.chainlit/chat_files/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Model files (if large)
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Data files (optional - uncomment if you don't want to commit data)
+# dataset/*.csv
+# dataset/*.json
