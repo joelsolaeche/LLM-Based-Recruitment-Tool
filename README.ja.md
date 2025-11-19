@@ -164,6 +164,20 @@ LLM_PROVIDER="gemini"  # または "openai"
 
 ---
 
+## 📁 プロジェクト構造
+
+- **ETL パイプライン** (`backend/etl.py`): 求人データを処理し、ベクトル埋め込みを生成するモジュール
+- **LLM ファクトリ** (`backend/llm_factory.py`): プロバイダに依存しない LLM インスタンスを生成する仕組み
+- **チャットモデル**:
+  - `chatgpt_clone.py`: メモリ機能を備えた汎用対話AI
+  - `jobs_finder.py`: セマンティック検索による求人マッチングモデル
+  - `jobs_finder_agent.py`: ツール利用が可能な高度エージェントモデル
+  - `resume_summarizer_chain.py`: レジュメ解析と要約を行うチェーン
+- **ユーティリティ** (`backend/utils.py`): PDF処理や補助的機能をまとめたモジュール
+- **リトリーバー** (`backend/retriever.py`): ChromaDB を用いたベクトル検索の実装
+
+---
+
 ## 🐛 トラブルシューティング
 
 ### Port already in use
@@ -193,7 +207,7 @@ Pull Request 歓迎！
 
 ## 📚 参考リンク
 
-- LangChain Docs  
-- Chainlit Docs  
-- ChromaDB Docs  
-- Docker Docs  
+- [LangChain Documentation](https://python.langchain.com/)
+- [Chainlit Documentation](https://docs.chainlit.io/)
+- [ChromaDB Documentation](https://docs.trychroma.com/)
+- [Docker Documentation](https://docs.docker.com/)
